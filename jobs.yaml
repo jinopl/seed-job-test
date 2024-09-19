@@ -1,0 +1,32 @@
+jobs:
+  - name: "Example-Job"
+    description: "This is an wow example job"
+    scm:
+      git:
+        url: "http://git.kodekloud.com:3000/max/wow-repo.git"
+        branch: "main"
+        token: "gitea-token"
+    jfpath: Jenkinsfile
+    jobpath: stg/gke
+
+    
+  - name: "Example-Job-stg"
+    description: "This is an wow example job"
+    scm:
+      git:
+        url: "http://git.kodekloud.com:3000/max/wow-repo.git"
+        branch: "main"
+        token: "gitea-token"
+    jfpath: Jenkinsfile
+    jobpath: stg/gke
+
+  
+  - name: "Example-Job-1"
+    description: "This is an example job"
+    scm:
+      git:
+        url: "http://git.kodekloud.com:3000/max/wow-repo.git"
+        branch: "main"
+        token: "gitea-token"
+    jfpath: Jenkinsfile
+    jobpath: prd/gke
